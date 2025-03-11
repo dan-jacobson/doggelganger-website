@@ -1,7 +1,7 @@
 ---
 title: "Contact"
-weight: 4
-header_menu: true
+weight: 3
+header_menu: false
 ---
 
 {{<contact_list>}}

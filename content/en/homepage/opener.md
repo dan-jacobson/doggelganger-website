@@ -1,14 +1,15 @@
 ---
-title: "Welcome"
+title: "Doggelganger"
 weight: 1
 ---
 
-`Hugo-Scroll` theme alternates colors of sections that are placed on single page.
-The landing screen is meant to be visually striking.
+Do you ever notice how pets tend to look like their owners? Have you ever taken a selfie and wondered, "is there a dog on Petfinder making a similarly funny face?"
 
-Single-page approach is oriented towards small to medium content length, that won't overwhelm the user.
-You can also delegate lengthier, less important or more sizeable content to [dedicated pages](services).
+`Doggelganger` answers both of those questions.
 
-> The belly rules the mind. --- spanish proverb
+Simply upload a selfie to our app that captures a moment you enjoy.
+Then, we look through our database of dogs to find one that matches your selfie's ~vibe.
 
-By the way this welcome section won't show in the cover menu.
+> The best thing about a man is his dog. -- Old french proverb
+
+We'll take your good side, and use it to find your better half.

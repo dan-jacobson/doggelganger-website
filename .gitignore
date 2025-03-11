@@ -1,0 +1,10 @@
+# system stuff
+.DS_Store
+tmp
+dist
+
+# Hugo
+public/
+
+# Tooling
+.aider*

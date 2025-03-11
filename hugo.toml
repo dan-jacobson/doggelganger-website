@@ -1,0 +1,38 @@
+baseURL = "http://doggelganger.me/"
+languageCode = "en-us"
+title = "Doggelganger!"
+theme = "agnes-hugo-theme"
+	
+[menu]
+	[[menu.main]]
+		Name = "How it works"
+		URL = "#"
+		weight = 1
+	
+	[[menu.main]]
+		Name = "Privacy"
+		URL = "#"
+		weight = 2
+		
+[params.content]
+	LeadTitle = "Find your canine look-alike!"
+	LeadDescription = "You have unique ~vibes, and your pet should match your energy. Upload a selfie, and we'll look through Petfinder and find a pup with similar energy."
+	ButtonCaption = "Get the app!"
+	ButtonURL = "www.google.com"
+
+################### Feature Columns (do not exceed 4) ####################
+
+[[params.feature]]
+	FeatureTitle = "Upload a selfie"
+	FeatureDescription = "Any one will do, but we suggest one that really shows your energy."
+	FeatureImage = "images/screenshot-1.jpeg"
+	
+[[params.feature]]
+	FeatureTitle = "We'll search"
+	FeatureDescription = "We index around 100,000 North American dogs. We'll be sure to find a match!"
+	FeatureImage = "images/feature-2.png"
+
+[[params.feature]]
+	FeatureTitle = "Meet your Doggelganger!"
+	FeatureDescription = "Share your doggelganger with your friends! If you're really inspired, reach out to their shelter using our link."
+	FeatureImage = "images/screenshot-3.jpeg"	

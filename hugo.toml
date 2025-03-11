@@ -1,38 +1,110 @@
-baseURL = "http://doggelganger.me/"
-languageCode = "en-us"
-title = "Doggelganger!"
-theme = "agnes-hugo-theme"
-	
-[menu]
-	[[menu.main]]
-		Name = "How it works"
-		URL = "#"
-		weight = 1
-	
-	[[menu.main]]
-		Name = "Privacy"
-		URL = "#"
-		weight = 2
-		
-[params.content]
-	LeadTitle = "Find your canine look-alike!"
-	LeadDescription = "You have unique ~vibes, and your pet should match your energy. Upload a selfie, and we'll look through Petfinder and find a pup with similar energy."
-	ButtonCaption = "Get the app!"
-	ButtonURL = "www.google.com"
+baseURL = "https://doggelganger.me"
 
-################### Feature Columns (do not exceed 4) ####################
+# This is a "one page"-website, so we do not need these kinds of pages...
+disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT"]
 
-[[params.feature]]
-	FeatureTitle = "Upload a selfie"
-	FeatureDescription = "Any one will do, but we suggest one that really shows your energy."
-	FeatureImage = "images/screenshot-1.jpeg"
-	
-[[params.feature]]
-	FeatureTitle = "We'll search"
-	FeatureDescription = "We index around 100,000 North American dogs. We'll be sure to find a match!"
-	FeatureImage = "images/feature-2.png"
+defaultContentLanguage = "en"
 
-[[params.feature]]
-	FeatureTitle = "Meet your Doggelganger!"
-	FeatureDescription = "Share your doggelganger with your friends! If you're really inspired, reach out to their shelter using our link."
-	FeatureImage = "images/screenshot-3.jpeg"	
+# The name of this wonderful theme ;-).
+theme = "hugo-scroll"
+
+# The browser tab name
+title = "Doggelganger - Find your canine look-alike!"
+
+# In order to add version information in the page's footer set to true.
+# enableGitInfo = true
+
+# enable emoji processing in Markdown (valid only for pure markdown content)
+enableEmoji = true
+
+# Theme-specific variables `.Site.Params.myParamName`
+[params]
+
+    # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
+    favicon = "images/icon.png"
+
+    # These "images" are used for the structured data templates. This will show up, when
+    # services like Twitter or Slack want to generate a preview of a link to your site.
+    # See https://gohugo.io/templates/internal#twitter-cards and https://gohugo.io/templates/internal#open-graph.
+    # NOT the actual header background image, go to _index.md instead
+    images = ["images/cover-image.jpg"]
+
+    # When set true, it creates a visual guard (partially transparent rounded box), preventing non-ideal background images from interfering with title/description headings
+    # Ideal images are homogenous around the centre and contrasting to the text.
+    # see CSS classes: .title-and-description-guard, .blog-title, .blog-description
+    # see _index.md header_headline and header_subheadline
+    title_guard = false
+
+    # Another "title" :-). This one is used as the site_name on the Hugo's internal
+    # opengraph structured data template.
+    # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
+    title = "Doggelganger - Find your canine look-alike!"
+
+    # The "description" of your website. This is used in the meta data of your generated html.
+    description = "Find your canine look-alike!"
+
+    # Show a menu of languages available
+    language_menu = false
+
+    # Show also a language menu item for the current language, if false only
+    # show the remaining languages
+    show_current_lang = false
+
+    # A "copyright"-line to be added at the bottom of the page.
+    # Hint: Plain HTML is supported in here as well. So you may e.g. add a link to your legal imprint-page.
+    copyright = "© Dan Jacobson 2025"
+
+    # This theme will, by default, inject a design-by-line at the bottom of the page.
+    # You can turn it off, but we would really appreciate if you don’t :-)
+    hidedesignbyline = true
+
+    # The sections of the home page alternate styling. Mark invert as true to swap the styling of the sections
+    invertSectionColors = false
+
+    # Options used for automatic image generation. see: https://gohugo.io/content-management/image-processing/
+    image_options = "webp q90 lanczos photo"
+
+    # Use "page_title | site_title" for <title> tags
+    # e.g. <title>Legal | Jane Doe - Nutrition Coach & Chef Consultant</title>
+    combine_page_and_site_title = false
+
+    [params.footer]
+    # Show contact icons for email/phone (if specified) in the footer of the page
+    showContactIcons = false
+
+    # Show links indicated with footer_menu and footer_menu_title in the footer of the page
+    showFooterLinks = false
+
+    [params.meta]
+        keywords = "match, dog, look-alike, doppelganger, puppy, face, selfie"
+
+   # [[params.contacts]]
+   #     label = "phone"
+   #     value = "+49 1111 555555"
+   #     url = "tel:+49 1111 555555"
+   #     icon = "fa fa-phone"
+
+    [[params.contacts]]
+        label = "email"
+        value = "support@doggelganger.me"
+        url = "mailto:support@doggelganger.me"
+        icon = "fa fa-envelope"
+
+    [[params.contacts]]
+        label = "GitHub"
+        value = "github.com/dan-jacobson/doggelganger"
+        url = "https://github.com/dan-jacobson/doggelganger"
+        icon = "fa-brands fa-github"
+
+# Define additional languages
+[languages]
+  [languages.en]
+    weight = 10
+    languageName = "English"
+    contentDir = "content/en"
+
+ # [languages.de]
+ #   title = "Erika Musterfrau - Ernährungshilfe & Kochberatung"
+ #   weight = 20
+ #   contentDir = "content/de"
+ #   languageName = "Deutsch"

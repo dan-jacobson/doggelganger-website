@@ -9,26 +9,19 @@ header_menu: false
 ---
 ### AI
 
-This theme includes the full set of [Font Awesome v6.6.0 icons](https://fontawesome.com/icons). Use the `{{</* icon */>}}` [shortcode](https://gohugo.io/content-management/shortcodes/) with the respective `name` to use an icon directly in your `.md` files. For example "{{< icon name="envelope" >}}":
+We use an AI model to summarize your selfies into "embeddings".
 
-```html
-{{</* icon name="envelope" */>}}
-```
+[dinov2 w registers] --> [image of embedding]
 
-If you want to use one of Font Awesome's brand icons—the ones that have a trademark warning and the `fa-brands` class—add `brand=true`. For example "{{< icon name="github" brand=true >}}":
+We train a cross-encoder to transform selfie embeddings into corresponding dog embeddings.
 
-```html
-{{</* icon name="github" brand=true */>}}
-```
-If you want to use these branded icons in your contact list, use the full class names in your `hugo.toml`:
+[cross-encoder architecture]
 
-```toml
-[[params.contacts]]
-  label = "GitHub"
-  value = "github.com/zjedi/hugo-scroll"
-  url = "https://github.com/zjedi/hugo-scroll"
-  icon = "fa-brands fa-github"
-```
+When you choose an image in the app, we take that image, make it into an embedding, use the cross-encoder to turn it into a corresponding "dog embedding", then do a similarity search in our database.
+
+[full architecture diagram]
+
+And that's how it works!!!
 
 ### Dogs
 
@@ -37,7 +30,3 @@ Right now we source our dogs from [Petfinder](https://www.petfinder.com). Althou
 If there's some other pet database you'd like to add, [contact us](#contact)!!!
 
 Also Petfinder, if you're reading this: please give us an API key instead. We'd love to do this the official way.
-
-Want to learn more about my services? See [dedicated page](services) with more details.
-[font-awesome-icons]: https://fontawesome.com/icons
-[hugo-shortcodes]: https://gohugo.io/content-management/shortcodes/

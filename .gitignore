@@ -5,6 +5,7 @@ dist
 
 # Hugo
 public/
+resources/
 
 # Tooling
 .aider*

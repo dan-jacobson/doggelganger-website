@@ -70,10 +70,10 @@ enableEmoji = true
 
     [params.footer]
     # Show contact icons for email/phone (if specified) in the footer of the page
-    showContactIcons = false
+    showContactIcons = true
 
     # Show links indicated with footer_menu and footer_menu_title in the footer of the page
-    showFooterLinks = false
+    showFooterLinks = true
 
     [params.meta]
         keywords = "match, dog, look-alike, doppelganger, puppy, face, selfie"

@@ -9,3 +9,6 @@ resources/
 
 # Tooling
 .aider*
+
+# Ignore design files
+mockups.key

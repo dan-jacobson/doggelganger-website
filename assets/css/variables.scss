@@ -27,7 +27,8 @@
     /* Dark section - text color */
     --section-dark-text-color: var(--section-light-bg-color);
     /* Dark section - background color */
-    --section-dark-bg-color: rgb(160, 21, 150);
+    --section-dark-bg-color: rgb(137, 30, 130);
+    // --section-dark-bg-color: var(--highlight);
 
     /* Light&Dark section >quote. Suppressive color, compared to 'Light section - text color'*/
     --section-uni-quote: grey;
@@ -45,22 +46,4 @@
     /* === Lists === */
     /* define list element for unnumbered lists, leave empty for default list element */
     --ul-li-icon: fa-asterisk;
-}
-
-/* Custom styling the logo to look like an app icon */
-#blog-logo {
-    border-radius: 22%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    transition: all 0.3s ease;
-
-    &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
-    }
-}
-
-/* Bring headline inline */
-.blog-title {
-    display: inline-block;
-    vertical-align: middle;
 }

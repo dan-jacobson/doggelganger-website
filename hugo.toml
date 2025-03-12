@@ -70,7 +70,7 @@ enableEmoji = true
 
     [params.footer]
     # Show contact icons for email/phone (if specified) in the footer of the page
-    showContactIcons = true
+    showContactIcons = false
 
     # Show links indicated with footer_menu and footer_menu_title in the footer of the page
     showFooterLinks = true

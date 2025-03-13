@@ -1,6 +1,6 @@
 ---
 title: "Play Store"
 weight: 99
-header_menu: true
-external: https://github.com/dan-jacobson/doggelganger_backend
+header_menu: false
+external: https://doggelganger.me/play-store
 ---
